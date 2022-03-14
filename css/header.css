@@ -1,0 +1,33 @@
+/* ===== header ===== */
+header{
+    min-height: 100px;
+    background-color: #364F6B;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 20px 200px;
+
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 16px;
+}
+.header__span{
+    color: #fff;
+}
+.navigation__list{
+    display: flex;
+}
+.navigation__link{
+    color: rgba(255, 255, 255, 0.5);
+    transition: all 0.3s;
+}
+.navigation__link:hover{
+    color: #fff;
+}
+.navigation__item + .navigation__item{
+    margin-left: 35px;
+}

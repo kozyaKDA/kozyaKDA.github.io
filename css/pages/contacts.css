@@ -1,0 +1,135 @@
+/* ====== styles contacts.html ===== */
+.main__inner{
+    color: #373A3C;
+    font-family: Montserrat;
+
+    padding-top: 70px;
+    padding-left: 200px;
+    padding-right: 200px;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+/* ======left item ===== */
+.main__title{
+    font-size: 30px;
+    line-height: 33px;
+    font-weight: 400;
+    margin-bottom: 40px;
+}
+.main__text{
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 26px;
+
+    margin-bottom: 40px;
+}
+.flex{
+    display: flex;
+    align-items: center;
+}
+.main__links{
+    display: flex;
+    margin-left: 15px;
+}
+.main__links-item + .main__links-item{
+    margin-left: 15px;
+}
+.main__link{
+    border-radius: 50%;
+    transition: all 0.3s;
+}
+.vk{
+    border: 1px solid #0077ff;
+    color: #0077FF;
+}
+.wa{
+    color: #25D366;
+    border: 1px solid #25D366;
+}
+.vk,
+.wa{
+    padding: 12px;
+}
+.vk:hover{
+    color: #fff;
+    background-color: #0077ff;
+}
+.wa:hover{
+    color: #fff;
+    background-color: #25D366;
+}
+
+/* ===== form ===== */
+.main__form{
+    padding-bottom: 40px;
+}
+main__form-label{
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+.main__form-input{
+    margin-bottom: 15px;
+    width: 540px;
+}
+.main__form-ta{
+    border: 1px solid #364F6B;
+    border-radius: 4px;
+    resize: none;
+    padding: 5px 10px;
+}
+.main__form-btn{
+    margin-top: 15px;
+}
+
+.right-border{
+    border: 1px solid red;
+}
+
+/* ===== modal ===== */
+.modal{
+    position: fixed;
+    top: 0%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    padding-top: 35px;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: rgba(0,0,0,0.4);
+}
+.modal__inner{
+    font-family: Montserrat;
+    display: flex;
+    flex-direction: column;
+    max-width: 250px;
+    min-height: 100px;
+    padding: 10px;
+    border: 2px solid #364F6B;
+    background-color: #fff;
+}
+.modal__header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #ccc;
+}
+.modal__header span{
+    font-size: 25px;
+    cursor: pointer;
+}
+.modal__content{
+    margin-top: 35px;
+}
+.none{
+    display: none;
+}
+
+/* ===== right item ===== */

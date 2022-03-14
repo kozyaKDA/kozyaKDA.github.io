@@ -1,0 +1,45 @@
+/* ===== global ===== */
+html,
+body{
+    height: 100%;
+}
+
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+.main{
+    flex: 1 0 auto;
+}
+.footer{
+    flex: 0 0 auto;
+}
+
+/* global styles */
+.btn{
+    background-color: #364F6B;
+
+    color: #fff;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 21px;
+
+    max-width: 108px;
+    min-height: 38px;
+
+    border-radius: 15px;
+    border: none;
+
+    cursor: pointer;
+}
+.inpt{
+    border-radius: 4px;
+    border: 1px solid #364F6B;
+
+    padding: 7px 16px;
+
+    height: 38px;
+}
