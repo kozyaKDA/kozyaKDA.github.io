@@ -31,3 +31,14 @@ header{
 .navigation__item + .navigation__item{
     margin-left: 35px;
 }
+.menu{
+    display: none;
+}
+.menu span{
+    background-color: #fff;
+    width: 25px;
+    height: 2px;
+    z-index: 2;
+    display: block;
+    margin: 7px 0;
+}
