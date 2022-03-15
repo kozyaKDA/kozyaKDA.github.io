@@ -222,4 +222,7 @@ main__form-label{
     .main__inner{
         padding: 0;
     }
+    .main__form{
+        padding-left: 25px;
+    }
 }
