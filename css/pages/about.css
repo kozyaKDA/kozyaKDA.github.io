@@ -52,7 +52,7 @@
 .tabs__item{
     text-align: justify;
     max-width: 770px;
-    min-height: 601px;
+    /* min-height: 601px; */
     padding: 15px;
 }
 .none{
