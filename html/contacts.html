@@ -58,14 +58,14 @@
                         Или заполнить форму ниже для связи по почте
                     </div>
                     <div class="main__form-wrapper">
-                        <form class="main__form">
+                        <form class="main__form" action="../php/ajax.php" method="post">
                             <div class="main__form-label">Ваш Email *</div><br> 
-                            <input class="main__form-input inpt" id="email" type="email" placeholder="example@mail.ru"><br>
+                            <input class="main__form-input inpt" id="email" name="email" type="email" placeholder="example@mail.ru"><br>
                             <div class="main__form-label">Как к Вам обращаться?</div><br>
-                            <input class="main__form-input inpt" id="name" type="text" placeholder="Зовут Имя, обращайтесь как хотите"><br>
+                            <input required class="main__form-input inpt" id="name" name="name" type="text" placeholder="Зовут Имя, обращайтесь как хотите"><br>
                             <div class="main__form-label">Ваше сообщение *</div><br>
-                            <textarea class="main__form-ta" id="text" name=""  cols="55" rows="10" ></textarea><br>
-                            <button class="main__form-btn btn" id="button">Отправить</button>
+                            <textarea class="main__form-ta" id="text" name="text"  cols="55" rows="10" ></textarea><br>
+                            <button class="main__form-btn btn" id="button" type="submit">Отправить</button>
                         </form>
                     </div>
                 </div>

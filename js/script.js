@@ -4,6 +4,7 @@ const userName = document.getElementById('name');
 const userMessage = document.getElementById('text');
 const modal = document.getElementById('modal');
 const modalContent = document.querySelector('.modal__content');
+const modalTitle = document.querySelector('.modal__title');
 const closeModal = document.getElementById('close');
 
 form.addEventListener('submit', formHandler);
@@ -31,11 +32,8 @@ function formHandler(e){
         if (userEmail.classList.contains('right-border')) userEmail.classList.remove('right-border');
         if (userMessage.classList.contains('right-border')) userMessage.classList.remove('right-border');
 
-        console.log("user Email: " + userEmail.value);    
-        console.log("user Name: " + userName.value);    
-        console.log("user Text: " + userMessage.value);
-
-        modalContent.innerHTML = "Спасибо. Данные отправлены";
+        modalTitle.innerHTML = "Спасибо";
+        modalContent.innerHTML = "Ваши данные успешно отравлены";
         modal.classList.remove('none');
     }
 }
