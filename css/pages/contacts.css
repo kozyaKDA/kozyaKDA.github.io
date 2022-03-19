@@ -165,26 +165,6 @@ main__form-label{
     }
 }
 
-@media (max-width: 910px) {
-    .header__span{
-        display: none;
-    }
-}
-
-@media (max-width: 780px) {
-    .navigation{
-        display: none;
-    }
-    .menu{
-        display: block;
-        margin-left: 15px;
-        transition: all 0.3s;
-    }
-    .menu-anim{
-        transform: translateX(50px);
-    }
-}
-
 @media (max-width: 750px) {
     .main__text{
         display: block;
@@ -209,16 +189,9 @@ main__form-label{
     .main__text{
         display: none;
     }
-    .logo-link{
-        display: none;
-    }
 }
 
 @media (max-width: 430px) {
-    .header{
-        padding: 0;
-        justify-content: start;
-    }
     .main__inner{
         padding: 0;
     }
