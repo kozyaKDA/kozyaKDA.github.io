@@ -11,7 +11,9 @@ function formListener(e){
 
     const inputText = objectInput.value;
 
-    const object = `<div class="main__object">
+    if(objectInput.value != ""){
+        objectInput.classList.remove('right-border');
+        const object = `<div class="main__object">
                         <div class="object__inner">
                             <h2 class="object__title">${inputText}</h2>
                             <form id="formItem">
@@ -25,11 +27,15 @@ function formListener(e){
                         </div>
                     </div>`;
 
-    mainGreetings.insertAdjacentHTML('afterend', object);
+        mainGreetings.insertAdjacentHTML('afterend', object);
 
-    formItem = document.querySelector('#formItem');
+        formItem = document.querySelector('#formItem');
 
-    objectInput.value = '';
+        objectInput.value = '';
+    } else{
+        objectInput.classList.add('right-border');
+    }
+    
 
     if (document.querySelector('#formItem')){
         const wordInput = document.querySelector('#word');

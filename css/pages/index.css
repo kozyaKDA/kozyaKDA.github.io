@@ -85,6 +85,9 @@ main{
     color: #FC5185;
 }
 
+.right-border{
+    border: 1px solid red;
+}
 /* ===== media ===== */
 @media (max-width: 1300px) {
     #formObject{
