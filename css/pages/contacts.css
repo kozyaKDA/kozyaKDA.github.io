@@ -4,11 +4,11 @@
     font-family: Montserrat;
 
     padding-top: 70px;
-    padding-left: 200px;
-    padding-right: 200px;
+    /* padding-left: 200px;
+    padding-right: 200px; */
 
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 /* ======left item ===== */
@@ -143,15 +143,25 @@ main__form-label{
 .right-item{
     display: flex;
     flex-direction: column;
+
+    max-width: 350px;
+    width: 100%;
+}
+.main__title{
+    align-self: center;
 }
 .search-box{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    max-width: 200px;    
+    max-width: 100%;
+    margin-bottom: 25px;   
 }
 .faq-search{
-    width: 150px;
+    width: 301px;
+}
+.main__list{
+    align-self: start;
 }
 /* ===== media ===== */
 @media (max-width: 1400px) {
