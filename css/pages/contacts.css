@@ -164,6 +164,66 @@ main__form-label{
     align-self: start;
 }
 /* ===== media ===== */
-@media (max-width: 1400px) {
-    
+@media (max-width: 1140px) {
+    .main__inner{
+        flex-direction: column;
+    }
+    .right-item{
+        order: -1;
+    } 
+    .main{
+        padding-left: 25px;
+    }
+    .main__list{
+        padding-bottom: 50px;
+    }
+}
+
+@media (max-width: 744px) {
+    .main__title{
+        display: none;
+    }
+    p.text{
+        display: none;
+    }
+    .main__links{
+        margin-left: 0px;
+    }
+}
+
+@media (max-width: 580px) {
+    .main__form-input{
+        width: 301px;
+    }
+    .main__form-ta{
+        width: 301px;
+    }
+}
+
+@media (max-width: 400px) {
+    .right-item, .left-item{
+        max-width: 320px;
+        width: 100%;
+    }
+}
+
+@media (max-width: 352px) {
+    .main{
+        padding-left: 5px;
+    }
+    .search-box{
+        justify-content: start;
+    }
+    .faq-search{
+        width: 250px;
+    }
+    .search-icon{
+        margin-left: 15px;
+    }
+    .main__form-input{
+        width: 250px;
+    }
+    .main__form-ta{
+        width: 250px;
+    }
 }
