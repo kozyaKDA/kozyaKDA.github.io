@@ -167,7 +167,7 @@ main__form-label{
 @media (max-width: 1140px) {
     .main__inner{
         flex-direction: column;
-    }
+    } 
     .right-item{
         order: -1;
     } 
