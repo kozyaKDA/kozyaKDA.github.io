@@ -11,7 +11,7 @@ form.addEventListener('submit', formHandler);
 
 function formHandler(e){
     e.preventDefault();
-    
+
     if((userEmail.value == '')&&(userMessage.value == '')){
         userEmail.classList.add('right-border');
         userMessage.classList.add('right-border');
@@ -32,9 +32,26 @@ function formHandler(e){
         if (userEmail.classList.contains('right-border')) userEmail.classList.remove('right-border');
         if (userMessage.classList.contains('right-border')) userMessage.classList.remove('right-border');
 
-        modalTitle.innerHTML = "Спасибо";
-        modalContent.innerHTML = "Ваши данные успешно отравлены";
-        modal.classList.remove('none');
+        $.ajax({
+            url: '../ajax.php',
+            type: 'POST',
+            cache: false,
+            data: {'email': userEmail.value, 'name': userName.value, 'text': userMessage.value},
+            dataType: 'html',
+            beforeSend: function(){
+                $("#button").prop("disabled", true);
+            },
+            success: function(){
+                modalTitle.innerHTML = "Спасибо";
+                modalContent.innerHTML = "Ваши данные успешно отравлены";
+                modal.classList.remove('none');
+                userEmail.value = '';
+                userName.value = '';
+                userMessage.value = '';
+                $("#button").prop("disabled", false);
+                
+            }            
+        });
     }
 }
 
@@ -43,4 +60,4 @@ window.onclick = function(e){
 }
 closeModal.onclick = function(e){
     modal.classList.add('none');
-}   
+}

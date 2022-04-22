@@ -2,7 +2,6 @@
 .main__inner{
     color: #373A3C;
     font-family: Montserrat;
-
     padding-top: 70px;
     /* padding-left: 200px;
     padding-right: 200px; */
@@ -162,6 +161,12 @@ main__form-label{
 }
 .main__list{
     align-self: start;
+}
+.main__list-item{
+    margin: 5px 0px;
+}
+.main__list-link{
+    color: #364F6B;
 }
 /* ===== media ===== */
 @media (max-width: 1140px) {
